@@ -12,8 +12,12 @@ def main():
     roll = random.randint(1,6)
     dieSum += roll
     print(f'You rolled a {roll}')
-  print(f'You rolled a total of {dieSum}')
-
+  if dieSum==2:
+    print('You rolled SnakeEyes! Critical Fail!')
+  elif dieSum==12:
+      print(f'You rolled a total of {dieSum}'" Critical HIT!")
+  else:
+    print(f'You rolled a total of {dieSum}')
 
 if __name__== "__main__":
   main()
